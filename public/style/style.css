@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.uiTopTitle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    cursor: pointer;
+}
+
+.logoFile {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+    padding: 10px;
+}
+
+.strongWord {
+    color: red;
+}
+
+i {
+    color: red;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-top: 2px;
+    height: 60px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.download {
+    width: 195px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: silver;
+    color: rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+}
+
+@media (min-width: 270px) and (max-width: 640px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 269px) {
+    body {
+        font-size: 12px;
+    }
+
+    .download {
+        width: 140px;
+    }
+}
+
+@media (min-width: 100) and (max-width: 199) {
+    body {
+        font-size: 12px;
+    }
+
+    .download {
+        width: 50px;
+        font-size: 10px;
+    }
+}
